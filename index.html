@@ -233,6 +233,7 @@ body{background:var(--cream);font-family:'DM Sans',sans-serif;color:var(--ink);m
       <button class="tab-btn active" onclick="showTab('weekly',this)" role="tab">🛒 Weekly</button>
       <button class="tab-btn" onclick="showTab('daily',this)" role="tab">📅 Daily</button>
       <button class="tab-btn" onclick="showTab('monthly',this)" role="tab">📦 Monthly</button>
+      <button class="tab-btn" onclick="showTab('travel',this)" role="tab">✈️ Travel</button>
     </nav>
   </div>
 </header>
@@ -661,6 +662,144 @@ body{background:var(--cream);font-family:'DM Sans',sans-serif;color:var(--ink);m
   </div>
 
 </div><!-- end monthly -->
+<!-- ══════════════════════════════════ TRAVEL ══════════════════════════════════ -->
+<div class="freq-section" id="tab-travel">
+  <div class="freq-hero" style="background:#f0f4ff;color:#3a4abf">
+    <div class="freq-hero-emoji">✈️</div>
+    <div><h2 style="color:#3a4abf">Travel Essentials Pouch</h2><p>Pack once, refresh consumables. Routine stays unbroken.</p></div>
+  </div>
+
+  <div class="cat-card">
+    <div class="cat-header" onclick="toggleCat(this)">
+      <div class="cat-icon" style="background:#f0f5ff">💊</div>
+      <div class="cat-header-text"><h3>Supplements — 7-day pill organiser</h3><span>Fill before every trip · AM/PM slots</span></div>
+      <span class="cat-chevron">▼</span>
+    </div>
+    <div class="cat-body">
+      <p class="cat-note">Use a weekly pill organiser with AM/PM slots. Fill it before every trip — never pack loose bottles.</p>
+      <div class="items-wrap">
+        <div class="item" onclick="toggleItem(this,event)"><div class="item-check">✓</div><div class="item-body"><span class="item-name">Creatine monohydrate</span><span class="item-brand">5g sachets or pre-weighed zip bags</span><span class="item-qty">7 days worth</span></div></div>
+        <div class="item" onclick="toggleItem(this,event)"><div class="item-check">✓</div><div class="item-body"><span class="item-name">Vitamin D3+K2</span><span class="item-qty">7 tablets</span></div></div>
+        <div class="item" onclick="toggleItem(this,event)"><div class="item-check">✓</div><div class="item-body"><span class="item-name">Omega-3 fish oil</span><span class="item-qty">7 softgels</span></div></div>
+        <div class="item" onclick="toggleItem(this,event)"><div class="item-check">✓</div><div class="item-body"><span class="item-name">Magnesium glycinate</span><span class="item-qty">7 tablets</span></div></div>
+        <div class="item" onclick="toggleItem(this,event)"><div class="item-check">✓</div><div class="item-body"><span class="item-name">Ashwagandha KSM-66</span><span class="item-qty">7 capsules</span></div></div>
+        <div class="item" onclick="toggleItem(this,event)"><div class="item-check">✓</div><div class="item-body"><span class="item-name">Multivitamin</span><span class="item-qty">7 tablets</span></div></div>
+        <div class="item" onclick="toggleItem(this,event)"><div class="item-check">✓</div><div class="item-body"><span class="item-name">Biotin 5000mcg</span><span class="item-qty">7 tablets</span></div></div>
+        <div class="item" onclick="toggleItem(this,event)"><div class="item-check">✓</div><div class="item-body"><span class="item-name">Zinc bisglycinate</span><span class="item-qty">7 tablets</span></div></div>
+        <div class="item" onclick="toggleItem(this,event)"><div class="item-check">✓</div><div class="item-body"><span class="item-name">Liv 52 DS</span><span class="item-brand">Himalaya</span><span class="item-qty">7 tablets</span></div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cat-card">
+    <div class="cat-header" onclick="toggleCat(this)">
+      <div class="cat-icon" style="background:#fff8f0">🥤</div>
+      <div class="cat-header-text"><h3>Protein & Nutrition</h3><span>Whey · Peanut butter · Dry fruits · Seeds</span></div>
+      <span class="cat-chevron">▼</span>
+    </div>
+    <div class="cat-body">
+      <div class="items-wrap">
+        <div class="item" onclick="toggleItem(this,event)"><div class="item-check">✓</div><div class="item-body"><span class="item-name">Whey protein sachets</span><span class="item-brand">3–4 single-serve sachets or pre-packed zip bags (1 scoop each)</span></div></div>
+        <div class="item" onclick="toggleItem(this,event)"><div class="item-check">✓</div><div class="item-body"><span class="item-name">Peanut butter</span><span class="item-brand">Alpino single-serve sachets or small travel jar</span></div></div>
+        <div class="item" onclick="toggleItem(this,event)"><div class="item-check">✓</div><div class="item-body"><span class="item-name">Almonds + walnuts</span><span class="item-brand">3–4 pre-portioned zip bags (daily snack portions)</span></div></div>
+        <div class="item" onclick="toggleItem(this,event)"><div class="item-check">✓</div><div class="item-body"><span class="item-name">Seed mix</span><span class="item-brand">1 small zip bag — enough for 3–4 days</span></div></div>
+        <div class="item" onclick="toggleItem(this,event)"><div class="item-check">✓</div><div class="item-body"><span class="item-name">Protein bar or instant oats</span><span class="item-brand">2–3 as backup — for when food options are poor</span></div></div>
+        <div class="item" onclick="toggleItem(this,event)"><div class="item-check">✓</div><div class="item-body"><span class="item-name">Honey sachets</span><span class="item-brand">2–3 single-use sachets for pre-workout shake</span></div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cat-card">
+    <div class="cat-header" onclick="toggleCat(this)">
+      <div class="cat-icon" style="background:#fff0f8">✨</div>
+      <div class="cat-header-text"><h3>Skincare</h3><span>Travel sizes · Decant jars · Minoxidil</span></div>
+      <span class="cat-chevron">▼</span>
+    </div>
+    <div class="cat-body">
+      <div class="items-wrap">
+        <div class="item" onclick="toggleItem(this,event)"><div class="item-check">✓</div><div class="item-body"><span class="item-name">CeraVe Moisturising Cream</span><span class="item-brand">Travel size or small decant jar</span></div></div>
+        <div class="item" onclick="toggleItem(this,event)"><div class="item-check">✓</div><div class="item-body"><span class="item-name">Cetaphil Gentle Cleanser</span><span class="item-brand">Travel size bottle</span></div></div>
+        <div class="item" onclick="toggleItem(this,event)"><div class="item-check">✓</div><div class="item-body"><span class="item-name">CeraVe SA Cleanser</span><span class="item-brand">Small decant — exfoliation days only</span></div></div>
+        <div class="item" onclick="toggleItem(this,event)"><div class="item-check">✓</div><div class="item-body"><span class="item-name">CeraVe Healing Ointment</span><span class="item-brand">Small tube — dry patches only</span></div></div>
+        <div class="item" onclick="toggleItem(this,event)"><div class="item-check">✓</div><div class="item-body"><span class="item-name">Lip balm</span><span class="item-brand">Vaseline Original — keep one permanently in pouch</span></div></div>
+        <div class="item" onclick="toggleItem(this,event)"><div class="item-check">✓</div><div class="item-body"><span class="item-name">Minoxidil 5% — Tugain</span><span class="item-brand">1 full 60ml bottle — lasts 30 days at correct dose</span></div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cat-card">
+    <div class="cat-header" onclick="toggleCat(this)">
+      <div class="cat-icon" style="background:#f0fff8">🦷</div>
+      <div class="cat-header-text"><h3>Oral Hygiene</h3><span>Dedicated travel set — never unpack</span></div>
+      <span class="cat-chevron">▼</span>
+    </div>
+    <div class="cat-body">
+      <div class="items-wrap">
+        <div class="item" onclick="toggleItem(this,event)"><div class="item-check">✓</div><div class="item-body"><span class="item-name">Toothbrush</span><span class="item-brand">Dedicated travel toothbrush — keep in pouch always</span></div></div>
+        <div class="item" onclick="toggleItem(this,event)"><div class="item-check">✓</div><div class="item-body"><span class="item-name">Toothpaste</span><span class="item-brand">Sensodyne travel tube</span></div></div>
+        <div class="item" onclick="toggleItem(this,event)"><div class="item-check">✓</div><div class="item-body"><span class="item-name">Dental floss</span><span class="item-brand">Oral-B travel pack</span></div></div>
+        <div class="item" onclick="toggleItem(this,event)"><div class="item-check">✓</div><div class="item-body"><span class="item-name">Copper tongue scraper</span><span class="item-brand">Flat enough to pack easily</span></div></div>
+        <div class="item" onclick="toggleItem(this,event)"><div class="item-check">✓</div><div class="item-body"><span class="item-name">Mouthwash</span><span class="item-brand">Listerine 100ml travel bottle</span></div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cat-card">
+    <div class="cat-header" onclick="toggleCat(this)">
+      <div class="cat-icon" style="background:#f4f0ff">🪒</div>
+      <div class="cat-header-text"><h3>Shaving & Grooming</h3><span>Travel razor · Gel · Balm</span></div>
+      <span class="cat-chevron">▼</span>
+    </div>
+    <div class="cat-body">
+      <div class="items-wrap">
+        <div class="item" onclick="toggleItem(this,event)"><div class="item-check">✓</div><div class="item-body"><span class="item-name">Razor</span><span class="item-brand">Gillette travel razor or 2 spare blades for regular handle</span></div></div>
+        <div class="item" onclick="toggleItem(this,event)"><div class="item-check">✓</div><div class="item-body"><span class="item-name">Shaving gel</span><span class="item-brand">Gillette Sensitive — travel size</span></div></div>
+        <div class="item" onclick="toggleItem(this,event)"><div class="item-check">✓</div><div class="item-body"><span class="item-name">After shave balm</span><span class="item-brand">Nivea Men Sensitive — small tube</span></div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cat-card">
+    <div class="cat-header" onclick="toggleCat(this)">
+      <div class="cat-icon" style="background:#f0f8ff">🚿</div>
+      <div class="cat-header-text"><h3>Body & Hygiene</h3><span>Body wash · Deodorant · Intimate care</span></div>
+      <span class="cat-chevron">▼</span>
+    </div>
+    <div class="cat-body">
+      <div class="items-wrap">
+        <div class="item" onclick="toggleItem(this,event)"><div class="item-check">✓</div><div class="item-body"><span class="item-name">Body wash</span><span class="item-brand">Dove Men+Care — small travel bottle</span></div></div>
+        <div class="item" onclick="toggleItem(this,event)"><div class="item-check">✓</div><div class="item-body"><span class="item-name">Deodorant / antiperspirant</span><span class="item-brand">Rexona Men travel stick or Nivea roll-on</span></div></div>
+        <div class="item" onclick="toggleItem(this,event)"><div class="item-check">✓</div><div class="item-body"><span class="item-name">Intimate wash</span><span class="item-brand">Sebamed or Sirona Men — small decant in leak-proof bottle</span></div></div>
+        <div class="item" onclick="toggleItem(this,event)"><div class="item-check">✓</div><div class="item-body"><span class="item-name">Anti-chafe gel</span><span class="item-brand">Sirona or Ustraa — small tube</span></div></div>
+        <div class="item" onclick="toggleItem(this,event)"><div class="item-check">✓</div><div class="item-body"><span class="item-name">Travel bath puff / loofah</span><span class="item-brand">Compact mesh version</span></div></div>
+        <div class="item" onclick="toggleItem(this,event)"><div class="item-check">✓</div><div class="item-body"><span class="item-name">Hand sanitiser</span><span class="item-brand">Dettol or Himalaya PurHands — 50ml</span></div></div>
+        <div class="item" onclick="toggleItem(this,event)"><div class="item-check">✓</div><div class="item-body"><span class="item-name">Cotton buds</span><span class="item-brand">10–15 in a small zip bag</span></div></div>
+        <div class="item" onclick="toggleItem(this,event)"><div class="item-check">✓</div><div class="item-body"><span class="item-name">Nail clipper</span><span class="item-brand">Small travel size — Vega</span></div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cat-card">
+    <div class="cat-header" onclick="toggleCat(this)">
+      <div class="cat-icon" style="background:#f8f8f8">🎒</div>
+      <div class="cat-header-text"><h3>Misc & Tech</h3><span>Power · Bags · Fragrance</span></div>
+      <span class="cat-chevron">▼</span>
+    </div>
+    <div class="cat-body">
+      <p class="cat-note">Pouch logic: toiletry bag with two sides — skincare/grooming on one side, supplements/nutrition on the other. Keep it packed by your bed. Travel = grab it, throw it in bag, done.</p>
+      <div class="items-wrap">
+        <div class="item" onclick="toggleItem(this,event)"><div class="item-check">✓</div><div class="item-body"><span class="item-name">Phone charger</span></div></div>
+        <div class="item" onclick="toggleItem(this,event)"><div class="item-check">✓</div><div class="item-body"><span class="item-name">Portable power bank</span></div></div>
+        <div class="item" onclick="toggleItem(this,event)"><div class="item-check">✓</div><div class="item-body"><span class="item-name">Microfibre towel</span><span class="item-brand">If destination is uncertain</span></div></div>
+        <div class="item" onclick="toggleItem(this,event)"><div class="item-check">✓</div><div class="item-body"><span class="item-name">Spare zip bags</span><span class="item-brand">4–5 for wet/dry separation</span></div></div>
+        <div class="item" onclick="toggleItem(this,event)"><div class="item-check">✓</div><div class="item-body"><span class="item-name">Fragrance / EDP</span><span class="item-brand">Travel decant from your collection (10ml atomiser)</span></div></div>
+        <div class="item" onclick="toggleItem(this,event)"><div class="item-check">✓</div><div class="item-body"><span class="item-name">Tissues</span><span class="item-brand">Small pocket pack</span></div></div>
+      </div>
+    </div>
+  </div>
+
+</div><!-- end travel -->
+
 </main>
 
 <button class="fab" onclick="resetAll()">↺ Reset list</button>
